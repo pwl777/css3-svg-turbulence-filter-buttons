@@ -1,0 +1,96 @@
+<!------ HTML Document - CSS - SVG Turbulence Filter Animation ------>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>HTML - CSS - SVG Turbulence Filter Animation</title>
+  <!-- Meta Data Tags -->
+    <meta charset="UTF-8"><!-- Unicode Character Encoding -->
+    <meta name="description" content="CSS - SVG Turbulence Filter Animation">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Pierson Lippard">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Responsive Viewport Background Tag -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Margarine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Sketch&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap" rel="stylesheet">
+    
+    <!-- Your own stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+  </head><!-- HTML head end -->
+  <body>
+      <h1>SVG Turbulence Filter<br>CSS3</h1>
+
+   <div class="container">
+
+       <div class="button_wrapper">
+            <button></button>
+            <div class="button_label">
+                HOME
+            </div>
+       </div><!-- div button 1 end -->
+
+       <div class="button_wrapper">
+            <button></button>
+            <div class="button_label">
+                ABOUT
+            </div>
+       </div><!-- div button 2 end -->
+
+       <div class="button_wrapper">
+            <button></button>
+            <div class="button_label">
+                ARTWORK
+            </div>
+       </div><!-- div button 3 end -->
+
+       <div class="button_wrapper">
+            <button></button>
+            <div class="button_label">
+                CONTACT
+            </div>
+       </div><!-- div button 4 end -->
+
+       <div class="button_wrapper">
+            <button></button>
+            <div class="button_label">
+                SHOP
+            </div>
+       </div><!-- div button 5 end -->
+
+   </div><!-- Div Container end -->
+   <svg>
+       <defs>
+           <filter id="shake0">
+               <feTurbulence id="turbulence" baseFrequency="0.045" numOctaves="3" seed="0"/>
+               <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="7"/>           
+            </filter>
+            <filter id="shake1">
+                <feTurbulence id="turbulence" baseFrequency="0.040" numOctaves="3" seed="0"/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="5"/>           
+             </filter>
+             <filter id="shake2">
+                <feTurbulence id="turbulence" baseFrequency="0.047" numOctaves="3" seed="0"/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="8"/>           
+             </filter>
+             <filter id="shake3">
+                <feTurbulence id="turbulence" baseFrequency="0.043" numOctaves="3" seed="0"/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6"/>           
+             </filter>
+             <filter id="shake4">
+                <feTurbulence id="turbulence" baseFrequency="0.048" numOctaves="3" seed="0"/>
+                <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="4"/>           
+             </filter>
+       </defs>
+   </svg>
+      
+    <script src="script.js"></script><!-- JavaScript end -->
+
+  </body><!-- HTML body end -->
+</html>
